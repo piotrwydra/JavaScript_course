@@ -1,0 +1,4 @@
+if (!userToEdit || userToEdit?.role === ROLE_TEACHER || userToEdit?.role === ROLE_SYS_ADMIN) {
+    return true;
+}
+(not user to edit) or(user to edit)
