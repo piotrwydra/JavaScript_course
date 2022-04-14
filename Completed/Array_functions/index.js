@@ -14,7 +14,7 @@ l(sentence.includes(employee) ? "yes" : "no")
 
 const array3 = [0, 1, 2, 3, 4]
 
-l(array3.includes(2) ? "I do" : "No, sorry")
+l(array3.includes(5) ? "I do" : "No, sorry")
 
 
 // some()
@@ -33,7 +33,7 @@ l(array2.some(number));
 
 const employees = ["Ibrahim", "Ciaran", "Allyson", "CJ", "Jack", "Hannah"];
 
-const longNames = employees.filter(x => x.length > 5);
+const longNames = employees.filter(x => x.length > 0);
 
 l(longNames);
 
@@ -49,5 +49,5 @@ l(reducedNumbers);
 // match()
 
 l(sentence.match("iotr is")) //returns an array, "iotr is" exists
-l(sentence.match("piotr")) //reurns null, piotr doesn't exist in the string
+l(sentence.match("piotr")) //returns null, piotr doesn't exist in the string
 l(sentence.match(/[A-Z]/g)) //returns all capital leters: 'P', 'E', 'B', 'E'
